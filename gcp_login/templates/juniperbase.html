@@ -1,0 +1,122 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Custom Css -->
+    <!-- <link rel="stylesheet" href="{%static 'styles.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" /> -->
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    
+
+    <title>Juniper Networks</title>
+  </head>
+
+  <body>
+
+  <!-- N A V B A R -->
+  <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon ion-md-menu"></span>
+    </button>
+    <!-- <img src="{% static 'images/logo.png' %}" class="img-fluid nav-logo-mobile" alt="Company Logo"> -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="container">
+      <h8>Juniper Networks</h8>
+      	<!-- <img src="{% static 'images/logo.png' %}" class="img-fluid nav-logo-desktop" alt="Company Logo"> -->
+        <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="/">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="register">Register <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- E N D  N A V B A R -->
+
+  {% block content %}
+
+  {% endblock %}
+
+  <!--  F O O T E R  -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+        
+          <ul>
+            <li><a href="#">Request a Quote</a></li>
+            <li><a href="#">Contact Sales</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-3">
+        
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Image Library</a></li>
+            <li><a href="#">Corporate Responsibility</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-3">
+          
+          <ul>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">DMCA Policy</a></li>
+            <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+            <li><a href="#">Site Map</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <p>© 1999 - 2024 Juniper Networks, Inc.
+            All rights reserved.</p>
+      
+        </div>
+      </div> 
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <a href="#"><i class="icon ion-logo-facebook"></i></a>
+            <a href="#"><i class="icon ion-logo-instagram"></i></a>
+            <a href="#"><i class="icon ion-logo-twitter"></i></a>
+            <a href="#"><i class="icon ion-logo-youtube"></i></a>
+          </div>
+          <!-- <div class="col-md-6 col-xs-12">
+            <small>2018 &copy; All rights reserved. Made by <a href="http://templune.com/" target="blank" class="external-links">Templune</a></small>
+          </div> -->
+      </div>
+    </div>
+  </footer>
+  <!--  E N D  F O O T E R  -->
+    
+
+    <!-- External JavaScripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+  </body>
+</html>

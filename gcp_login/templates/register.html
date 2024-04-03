@@ -1,0 +1,73 @@
+<!-- {% extends 'juniperbase.html' %} -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{%static 'styles.css' %}" type="text/css" />
+    <title>Register</title> 
+  </head>
+ 
+
+
+
+
+<!-- {% block content %} -->
+
+<li><li><li><li><li><li><li>
+<form  method="post">
+    {% csrf_token %}
+    <div class="container">
+      <h1>Register</h1>
+      <p>Kindly fill in this form to register.</p>
+      <!-- label and input for username -->
+      <label for="username"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="username"
+        id="username"
+        required
+      />
+      <!-- label and input for email -->
+      <label for="email"><b>Email</b></label>
+      <input
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        id="email"
+        required
+      />
+      <!-- label and input for password -->
+      <label for="contactNumber"><b>Contact Number</b></label>
+      <input
+        type="text"
+        placeholder="Enter Contact Number"
+        name="contact"
+        id="contact"
+        required
+      />
+      <!-- label and input for repeated password -->
+      <label for="companyName"><b>Company Name</b></label>
+      <input
+        type="text"
+        placeholder="Company Name"
+        name="company-name"
+        id="company-name"
+        required
+      />
+      <!-- submit button -->
+    <button type="submit">Submit</button>
+    </div>
+    <!-- <div>
+        <p>Already have an account? <a href="#">Log in</a>.</p>
+    </div> -->
+  </form>
+  <li><li><li><li><li>
+
+  </html>
+
+
+<!-- {% endblock %} -->
